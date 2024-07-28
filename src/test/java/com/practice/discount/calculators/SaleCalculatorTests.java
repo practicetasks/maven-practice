@@ -20,7 +20,7 @@ public class SaleCalculatorTests {
     @Test
     public void testSale20Price10000()
             throws IncorrectDiscountException, IncorrectFinalPriceException {
-        final PriceCalculator calculator = CalculatorsFactory.makeNewDiscount(20);
+        final PriceCalculator calculator = CalculatorsFactory.makeNewSale(20);
         final double finalPrice = calculator.calculateFinalPrice(10000);
         assertEquals(8000, finalPrice);
     }
